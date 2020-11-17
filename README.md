@@ -13,7 +13,7 @@ Here are the incomplete features.
 
 All the changes you need to make will be in _src/components/ProductView.js_.
 
-## Phase 0: Prepare
+## Prepare
 
 Before starting to change code on a new-to-you project, it is helpful to become
 familiar with what's already been done.  In this case, the original developer
@@ -264,7 +264,7 @@ Congratulations on getting the bugs worked out of your implementation! A key
 skill for developers is trying each path a user can take to ensure the 
 experiences are both correct and pleasing.
 
-## Re-rendering in components
+### Re-rendering in components
 
 Add a `console.log` before the return statement in `ProductView`. Refresh the 
 application in the browser and click through several scenarios for opening and
