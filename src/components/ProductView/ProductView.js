@@ -1,17 +1,9 @@
 import React from "react";
-import '../styles/Product.css'
-import ProductListItem from "./ProductListItem";
-import ProductDetails from "./ProductDetails";
+import ProductListItem from "../ProductListItem";
+import ProductDetails from "../ProductDetails";
+import './ProductView.css'
 
-// Eventually this should be data loaded from a service, for now just fake it
-import mockData from "../mockdata/products.json";
-/** Note to developers
- * The import above works within create-react-app because
- * Webpack bundles the file into the application.
- * You'll learn how to fetch content through APIs in a future lesson.
- */
-
-function ProductView() {
+function ProductView({ products }) {
     // TODO: Replace with state variable
     const sideOpen = true;
 
@@ -20,11 +12,11 @@ function ProductView() {
             <div className="product-main-area">
                 <h1>Products</h1>
                 <div className="product-list">
-                    {mockData.map(item =>
+                    {products.map(item =>
                         <ProductListItem
                             key={item.id}
                             product={item}
-                            onClick={() => console.log('SET SELECTED PRODUCT', item)}
+                            onClick={() => console.log('SELECT PRODUCT', item)}
                         />
                     )}
                 </div>
