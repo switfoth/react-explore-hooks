@@ -10,10 +10,12 @@ function ProductView({ products }) {
     const [selectedProduct, setSelectedProduct] = useState(null);
 
     useEffect(() => {
+        if (selectedProduct)
         setSideOpen(true)
     }, [selectedProduct])
 
     useEffect(() => {
+        if(!sideOpen)
         setSelectedProduct()
     }, [sideOpen])
 
