@@ -17,6 +17,7 @@
     flex: 0 0 fit-content;
     -webkit-box-shadow: -5px 1px 4px 1px rgba(0,0,0,0.45);
     box-shadow: -5px 1px 4px 1px rgba(0,0,0,0.45);
+    transition: width 2s;
 }
 
 .product-side-panel-toggle {
@@ -32,6 +33,7 @@
     justify-content: center;
     width: 20px;
     height: 45px;
+    transition: width 2s;
 }
 
 /* NOTE: Special handing to put the toggle OUTSIDE the details panel so it does
@@ -44,6 +46,7 @@
     top: 10px;
     width: 0;
     height: 0;
+    transition: width 2s;
 }
 
 /* LIST */
